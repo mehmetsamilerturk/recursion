@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 def fibs(n)
   result = []
-  return result if n == 0
+  return result if n.zero?
   return [0] if n == 1
   return [0, 1] if n == 2
 
@@ -14,12 +16,12 @@ def fibs(n)
   result
 end
 
-#p fibs(2)
-#p fibs(3)
-#p fibs(10)
+# p fibs(2)
+# p fibs(3)
+# p fibs(10)
 
 def fibs_rec(n)
-  return [] if n == 0
+  return [] if n.zero?
   return [0] if n == 1
   return [0, 1] if n == 2
 
